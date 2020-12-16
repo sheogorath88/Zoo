@@ -11,5 +11,8 @@ public class Zoo {
         System.out.println("Imię małpki to " + george.getName());
         george.setName("Benek");
         System.out.println("Nowe imię małpki to " + george.getName());
+
+        Parrot ara = new Parrot("green", "Ara",30);
+        System.out.println(ara.fly());
     }
 }
