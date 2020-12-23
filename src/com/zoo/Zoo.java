@@ -14,5 +14,9 @@ public class Zoo {
 
         Parrot ara = new Parrot("green", "Ara",30);
         System.out.println(ara.fly());
+
+        Elephant adam = new Elephant(250,2,2,"Adam");
+        System.out.println(adam.getName());
+
     }
 }
