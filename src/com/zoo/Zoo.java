@@ -6,7 +6,7 @@ public class Zoo {
 
         Monkey george = new Monkey("green", 0.5, "George",1);
         george.jump();
-        String voice = george.uhuhu();
+        String voice = george.talk();
         System.out.println(voice);
         System.out.println("Imię małpki to " + george.getName());
         george.setName("Benek");
@@ -18,5 +18,13 @@ public class Zoo {
         Elephant adam = new Elephant(250,2,2,"Adam");
         System.out.println(adam.getName());
 
+
+        HomoErectus homoErectus = new HomoErectus("brown",0,"Ala",2);
+        System.out.println(homoErectus.talk());
+        homoErectus.jump();
+
+        HomoSapiens homoSapiens = new HomoSapiens("green",0,"Paweł",2, "dark");
+        System.out.println(homoSapiens.talk());
+        homoSapiens.jump();
     }
 }

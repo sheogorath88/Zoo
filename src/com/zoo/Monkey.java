@@ -20,7 +20,7 @@ public class Monkey {
         System.out.println("Hop hop hop");
     }
 
-    public String uhuhu() {
+    public String talk() {
         return "uhuhuhuu";
     }
 
