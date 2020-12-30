@@ -1,33 +1,27 @@
 package com.zoo;
 
 //klasa
-public class Monkey {
+public class Monkey extends Animal{
     private String eyeColour;
     private double lengthOfTail;
-    private String name;
-    private int height;
 
     //konstruktor
     public Monkey(String newEyeColour, double newLengthOfTail, String newName, int newHeight) {
+        super(newName, newHeight);
         this.eyeColour = newEyeColour;
         this.lengthOfTail = newLengthOfTail;
-        this.name = newName;
-        this.height = newHeight;
     }
-
     //metody
     public void jump() {
         System.out.println("Hop hop hop");
     }
 
-    public String talk() {
+    @Override
+    public String giveVoice() {
         return "uhuhuhuu";
     }
 
     //gettery
-    public String getName() {
-        return this.name;
-    }
 
     public double getLengthOfTail() {
         return this.lengthOfTail;
@@ -37,14 +31,8 @@ public class Monkey {
         return this.eyeColour;
     }
 
-    public int getHeight() {
-        return this.height;
-    }
 
     // settery
-    public void setName(String newName) {
-        this.name = newName;
-    }
 
     public void setEyeColour(String newEyeColour) {
         this.eyeColour = newEyeColour;
@@ -54,7 +42,4 @@ public class Monkey {
         this.lengthOfTail = newLengthOfTail;
     }
 
-    public void setHeight(int newHeight) {
-        this.height = newHeight;
-    }
 }

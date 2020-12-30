@@ -10,7 +10,7 @@ public class HomoErectus extends Monkey{
     }
 
     @Override
-    public String talk() {
+    public String giveVoice() {
         return "Mama, tata, Krzyś";
     }
 }
