@@ -1,11 +1,16 @@
 package com.zoo.monkey;
 
+import com.zoo.AnimalDetails;
+
 public class HomoSapiens extends HomoErectus {
     private String beard;
-    public HomoSapiens(String newEyeColour, double newLengthOfTail, String newName, int newHeight, String newBeard, int newAge) {
-        super(newEyeColour, newLengthOfTail, newName, newHeight, newAge);
-        this.beard = newBeard;
+
+
+    public HomoSapiens(AnimalDetails animalDetails, String eyeColour, double lengthOfTail, String beard) {
+        super(animalDetails, eyeColour, lengthOfTail);
+        this.beard = beard;
     }
+
     public void think(){
         System.out.println("I am a thinking human");
     }

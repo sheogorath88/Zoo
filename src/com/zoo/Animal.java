@@ -4,11 +4,10 @@ public abstract class Animal {
 
     private AnimalDetails animalDetails;
 
-    public Animal (String newName, int newHeight, int newAge){
-        AnimalDetails animalDetails = new AnimalDetails(newName, newHeight, newAge);
+    public Animal(AnimalDetails animalDetails) {
         this.animalDetails = animalDetails;
-
     }
+
 
     public abstract String giveVoice();
 }

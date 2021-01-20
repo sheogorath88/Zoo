@@ -1,6 +1,7 @@
 package com.zoo.monkey;
 
 import com.zoo.Animal;
+import com.zoo.AnimalDetails;
 
 //klasa
 public class Monkey extends Animal {
@@ -8,11 +9,13 @@ public class Monkey extends Animal {
     private double lengthOfTail;
 
     //konstruktor
-    public Monkey(String newEyeColour, double newLengthOfTail, String newName, int newHeight, int newAge) {
-        super(newName, newHeight, newAge);
-        this.eyeColour = newEyeColour;
-        this.lengthOfTail = newLengthOfTail;
+
+    public Monkey(AnimalDetails animalDetails, String eyeColour, double lengthOfTail) {
+        super(animalDetails);
+        this.eyeColour = eyeColour;
+        this.lengthOfTail = lengthOfTail;
     }
+
     //metody
     public void jump() {
         System.out.println("Hop hop hop");

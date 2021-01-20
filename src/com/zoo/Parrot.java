@@ -3,10 +3,12 @@ package com.zoo;
 public class Parrot extends Animal{
     private String colour;
 
-    public Parrot(String newColour, String newName, int newHeight, int newAge){
-        super(newName, newHeight, newAge);
-        this.colour = newColour;
+    public Parrot(AnimalDetails animalDetails, String colour) {
+        super(animalDetails);
+        this.colour = colour;
     }
+
+
 //    metody
     public String fly() {
         return "fru fru fru";

@@ -12,10 +12,10 @@ public class Zoo {
     public static void main(String[] args) {
 
         List<Animal> animals = new ArrayList<>();
-        Animal elephant = new Elephant(50,1,1,"Dumbo", 10);
-        Animal parrot = new Parrot("white", "Ara", 30, 3);
-        Animal monkey = new Monkey("green", 50, "George", 1, 5);
-        Animal human = new HomoSapiens("brown",0,"Paweł",2,"dark", 18);
+        Animal elephant = new Elephant(new AnimalDetails("Dumbo", 2, 10), 200, 3);
+        Animal parrot = new Parrot(new AnimalDetails("Ara", 1, 3), "blue");
+        Animal monkey = new Monkey(new AnimalDetails("George", 1, 4), "brown", 0.5);
+        Animal human = new HomoSapiens(new AnimalDetails("Paweł", 2, 29), "green", 0, "dark");
         animals.add(elephant);
         animals.add(parrot);
         animals.add(monkey);
@@ -25,13 +25,13 @@ public class Zoo {
         for(int i = 0; i < animals.size(); i++){
             System.out.println(animals.get(i).giveVoice());
         }
-        Animal homoErectus = new HomoSapiens("sd",3,"sa", 3,"da", 18);
+        Animal homoErectus = new HomoSapiens(new AnimalDetails("Kasia", 1, 23), "blue", 0, "null");
         System.out.println(homoErectus.giveVoice());
 
     }
 
     private static void test() {
-        Monkey george = new Monkey("green", 0.5, "George",1, 5);
+        Monkey george = new Monkey(new AnimalDetails("Pinkie", 1, 3), "brown", 1);
         george.jump();
         String voice = george.giveVoice();
         System.out.println(voice);
@@ -39,18 +39,18 @@ public class Zoo {
 //        george.setName("Benek");
 //        System.out.println("Nowe imię małpki to " + george.getName());
 
-        Parrot ara = new Parrot("green", "Ara",30, 3);
+        Parrot ara = new Parrot(new AnimalDetails("Kara", 1, 5), "multicolour");
         System.out.println(ara.fly());
 
 //        Elephant adam = new Elephant(250,2,2,"Adam");
 //        System.out.println(adam.getName());
 
 
-        HomoErectus homoErectus = new HomoErectus("brown",0,"Ala",2, 20);
+        HomoErectus homoErectus = new HomoErectus(new AnimalDetails("Bubu", 1, 23), "blue", 0.5);
         System.out.println(homoErectus.giveVoice());
         homoErectus.jump();
 
-        HomoSapiens homoSapiens = new HomoSapiens("green",0,"Paweł",2, "dark", 33);
+        HomoSapiens homoSapiens = new HomoSapiens(new AnimalDetails("Alma", 2, 30), "black", 0, "null");
         System.out.println(homoSapiens.giveVoice());
         homoSapiens.jump();
     }
