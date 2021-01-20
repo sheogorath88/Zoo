@@ -1,5 +1,9 @@
 package com.zoo;
 
+import com.zoo.monkey.HomoErectus;
+import com.zoo.monkey.HomoSapiens;
+import com.zoo.monkey.Monkey;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,17 +11,23 @@ public class Zoo {
 
     public static void main(String[] args) {
 
-//
         List<Animal> animals = new ArrayList<>();
-        Elephant elephant = new Elephant(50,1,1,"Dumbo");
-        Parrot parrot = new Parrot("white", "Ara", 30);
-        Monkey monkey = new Monkey("green", 50, "George", 1);
+        Animal elephant = new Elephant(50,1,1,"Dumbo");
+        Animal parrot = new Parrot("white", "Ara", 30);
+        Animal monkey = new Monkey("green", 50, "George", 1);
+        Animal human = new HomoSapiens("brown",0,"Paweł",2,"dark");
         animals.add(elephant);
         animals.add(parrot);
         animals.add(monkey);
+        animals.add(human);
+
+
         for(int i = 0; i < animals.size(); i++){
             System.out.println(animals.get(i).giveVoice());
         }
+        Animal homoErectus = new HomoSapiens("sd",3,"sa", 3,"da");
+        System.out.println(homoErectus.giveVoice());
+
     }
 
     private static void test() {

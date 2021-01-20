@@ -1,6 +1,6 @@
-package com.zoo;
+package com.zoo.monkey;
 
-public class HomoSapiens extends HomoErectus{
+public class HomoSapiens extends HomoErectus {
     private String beard;
     public HomoSapiens(String newEyeColour, double newLengthOfTail, String newName, int newHeight, String newBeard) {
         super(newEyeColour, newLengthOfTail, newName, newHeight);

@@ -1,6 +1,8 @@
-package com.zoo;
+package com.zoo.monkey;
 
-public class HomoErectus extends Monkey{
+import com.zoo.monkey.Monkey;
+
+public class HomoErectus extends Monkey {
 
     public HomoErectus(String newEyeColour, double newLengthOfTail, String newName, int newHeight) {
         super(newEyeColour, newLengthOfTail, newName, newHeight);

@@ -1,7 +1,9 @@
-package com.zoo;
+package com.zoo.monkey;
+
+import com.zoo.Animal;
 
 //klasa
-public class Monkey extends Animal{
+public class Monkey extends Animal {
     private String eyeColour;
     private double lengthOfTail;
 

@@ -1,6 +1,6 @@
 package com.zoo;
 
-public class Animal {
+public abstract class Animal {
     private String name;
     private int height;
 
@@ -8,7 +8,5 @@ public class Animal {
         this.name = name;
         this.height = height;
     }
-    public String giveVoice(){
-        return "grrrrrr";
-    }
+    public abstract String giveVoice();
 }
