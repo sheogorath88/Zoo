@@ -2,8 +2,8 @@ package com.zoo.monkey;
 
 public class HomoSapiens extends HomoErectus {
     private String beard;
-    public HomoSapiens(String newEyeColour, double newLengthOfTail, String newName, int newHeight, String newBeard) {
-        super(newEyeColour, newLengthOfTail, newName, newHeight);
+    public HomoSapiens(String newEyeColour, double newLengthOfTail, String newName, int newHeight, String newBeard, int newAge) {
+        super(newEyeColour, newLengthOfTail, newName, newHeight, newAge);
         this.beard = newBeard;
     }
     public void think(){

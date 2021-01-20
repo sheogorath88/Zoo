@@ -3,8 +3,8 @@ package com.zoo;
 public class Parrot extends Animal{
     private String colour;
 
-    public Parrot(String newColour, String newName, int newHeight){
-        super(newName, newHeight);
+    public Parrot(String newColour, String newName, int newHeight, int newAge){
+        super(newName, newHeight, newAge);
         this.colour = newColour;
     }
 //    metody

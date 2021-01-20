@@ -5,8 +5,8 @@ public class Elephant extends Animal{
     private int bodyLength;
 
 
-    public Elephant(int newMass, int newBodyLength, int newHeight, String newName){
-        super(newName, newHeight);
+    public Elephant(int newMass, int newBodyLength, int newHeight, String newName, int newAge){
+        super(newName, newHeight, newAge);
         this.mass = newMass;
         this.bodyLength = newBodyLength;
     }

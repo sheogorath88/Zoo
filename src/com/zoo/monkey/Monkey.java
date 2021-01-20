@@ -8,8 +8,8 @@ public class Monkey extends Animal {
     private double lengthOfTail;
 
     //konstruktor
-    public Monkey(String newEyeColour, double newLengthOfTail, String newName, int newHeight) {
-        super(newName, newHeight);
+    public Monkey(String newEyeColour, double newLengthOfTail, String newName, int newHeight, int newAge) {
+        super(newName, newHeight, newAge);
         this.eyeColour = newEyeColour;
         this.lengthOfTail = newLengthOfTail;
     }
